@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Open Sans', sans-serif;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .navmenu {
+            display: flex;
+        }
+
+        .navmenu a {
+            color: cadetblue;
+            font-size: 16px;
+            text-transform: capitalize;
+            padding: 10px 20px;
+            font-weight: 400;
+            transition: all .42s ease;
+        }
+
+        .navmenu a:hover {
+            color: #ee1c47;
+        }
+
+        section {
+            padding: 5% 10%;
+        }
+
+        .center-text h2 {
+            color: #111;
+            font-size: 28px;
+            text-transform: capitalize;
+            text-align: center;
+
+        }
+
+        .center-text span {
+            color: #ee1c47;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+            gap: 2rem;
+        }
+
+        .row {
+            position: relative;
+            transition: all .40s;
+        }
+
+        .row img {
+            width: 100%;
+            height: auto;
+            transition: all .40s;
+        }
+
+        .row img:hover {
+            transform: scale(0.9);
+        }
+
+        .product-text h5 {
+            position: absolute;
+            top: 13px;
+            left: 13px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            background-color: #27b737;
+            padding: 3px 10px;
+            border-radius: 2px;
+        }
+
+        .heart-icon {
+            position: absolute;
+            right: 0;
+            font: 20px;
+        }
+
+        .heart-icon:hover {
+            color: red;
+        }
+
+        .ratting i {
+            color: #ff8c00;
+            font-size: 18px;
+        }
+
+        .price h4 {
+            color: #111;
+            font-size: 16px;
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+
+        .price p {
+            color: #151515;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="navmenu">
+            <button>
+                <li><a href="main.html">Back</a></li>
+            </button>
+        </ul>
+    </header>
+
+    <section class="trending-product" id="trending">
+        <div class="center-text">
+            <h2>Our Trending <span>Products</span></h2>
+        </div>
+        <br>
+        <br>
+        <div class="products">
+            <div class="row">
+                <img src="Images/bag1.jpg.jpg" alt="">
+                <div class="product-text">
+                    <h5>sale</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Jute Handbag</h4>
+                    <p>Rs500-Rs600</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="Images/bag2.jpg.jpg" alt="">
+                <div class="product-text">
+                    <h5>new</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h5>Shelf Ethnic Bohemian Handmade </h5>
+                    <p>Rs300-Rs480</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="Images/bag3.jpg.jpg" alt="">
+
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Ladies Bag Banjara Handmade</h4>
+                    <p>Rs700-Rs850</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="Images/cloth1.jpg" alt="">
+                <div class="product-text">
+                    <h5>hot</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Fancy Handmade Cardigan</h4>
+                    <p>Rs2000-Rs2500</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="Images/cloth2.jpg" alt="">
+
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Corushe Kalamari Dress</h4>
+                    <p>Rs750-Rs800</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="Images/cloth3.jpg" alt="">
+                <div class="product-text">
+                    <h5>hot</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Afghan Kochi Handmade</h4>
+                    <p>Rs900-Rs1000</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="Images/j1.jpg" alt="">
+                <div class="product-text">
+                    <h5>sale</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Banjara Choker Handmade</h4>
+                    <p>Rs200-Rs250</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="Images/j2.jpg" alt="">
+                <div class="product-text">
+                    <h5>sale</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Tassels Latkan Handmade</h4>
+                    <p>Rs315-Rs400</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="Images/j3.jpg" alt="">
+
+
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Collar Handmade Chain</h4>
+                    <p>Rs500-Rs600</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
